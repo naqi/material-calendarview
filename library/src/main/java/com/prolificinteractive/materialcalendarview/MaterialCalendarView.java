@@ -543,7 +543,7 @@ public class MaterialCalendarView extends ViewGroup {
    */
   public void setTileSize(int size) {
     this.tileWidth = size;
-    this.tileHeight = size;
+    this.tileHeight = (int) (size * 0.80);
     requestLayout();
   }
 
